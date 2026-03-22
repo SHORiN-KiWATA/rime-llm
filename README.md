@@ -65,7 +65,7 @@ Ai可以是本地Ollama或LMStudio，也可以是API调用。
     },
     ```
 
-    然后在配置文件顶部的`active_profile = "gemini",`切换要使用的配置（此处对应的是`gemini = {`的`gemini`名字，而不是`name`）。
+    然后在配置文件顶部的`active_profile = "gemini",`切换要使用的配置（此处对应的是`gemini = {`的`gemini`，而不是`name = Gemini`里的`Gemini`）。
 
     `model`可以设置使用的模型（如果有的话）。
 
