@@ -135,7 +135,7 @@ local function translator(input, seg, env)
     
     if #history_text > 0 then
         local safe_history = escape_json(history_text)
-        user_content = string.format("【历史上下文】：%s\\n【当前需翻译的拼音】：%s", safe_history, safe_text)
+        user_content = string.format("【历史输入】：%s\\n【当前需翻译的拼音】：%s", safe_history, safe_text)
     end
 
     local json_data = ""
