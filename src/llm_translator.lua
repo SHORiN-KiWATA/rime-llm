@@ -58,6 +58,7 @@ local function translator(input, seg, env)
     end
 
     local send_text = string.sub(input, 1, -trigger_len - 1)
+    send_text = string.gsub(send_text, "[\\\\/]", "、")
     if #send_text == 0 then return end
 
     local current_ai = Config.profiles and Config.profiles[Config.active_profile]

@@ -462,11 +462,11 @@ def init_rime_config():
         custom_yaml = os.path.join(rime_dir, "rime_ice.custom.yaml")
         patch_content = """
   # 1. 扩充允许输入的字符集：允许在拼音中直接输入指定的标点符号，阻止其直接上屏
-  "speller/alphabet": "zyxwvutsrqponmlkjihgfedcba.,?'!:<>"
+  "speller/alphabet": "zyxwvutsrqponmlkjihgfedcba.,?'!:<>\\\\/"
   # 2. 将 Lua AI 脚本 (llm_translator) 强行插入到处理列表的第 0 位之前
   "engine/translators/@before 0": lua_translator@llm_translator
   # 3. 定义正则捕获规则：把输入当成不可分割的整体喂给 AI 脚本处理
-  "recognizer/patterns/llm_pinyin": "^[a-z][a-z.,?'!:]*$"
+  "recognizer/patterns/llm_pinyin": "^[a-z][a-z.,?'!:<>/\\\\\\\\]*$"
 """
         if os.path.exists(custom_yaml):
             with open(custom_yaml, 'r', encoding='utf-8') as f: content = f.read()
