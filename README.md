@@ -89,7 +89,7 @@
 
 `rime-llm-config`是编辑配置的TUI工具。
 
-> 如果你要手动编辑配置文件请编辑`~/.confgi/rime-llm-translator/state.json`后用`rime-llm-config sync`命令同步至`config.lua`
+> 如果你要手动编辑配置文件请编辑`~/.config/rime-llm-translator/state.json`后用`rime-llm-config sync`命令同步至`config.lua`
 
 
 ![](pictures/TUI/mainmenu.png)
