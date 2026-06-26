@@ -1,11 +1,11 @@
 {
-    "active_profile": "siliconflow",
+    "active_profile": "opencodezenshare",
     "profiles": {
-        "siliconflow": {
-            "name": "SiliconFlow",
-            "api_url": "https://api.siliconflow.cn/v1/chat/completions",
-            "api_key": "sk-lltlfdcrqwxfbmhgljslljfdbcpdbgxcngxdqkopdsfwjpnj",
-            "model": "THUDM/GLM-4-9B-0414"
+        "opencodezenshare": {
+            "name": "opencodezen",
+            "api_url": "https://opencode.ai/zen/v1/chat/completions",
+            "api_key": "sk-Ol1VX7IiknlhWk5kMfOK6ltkB34qR7e3RkirMd5xhAxdGmuhsGvSMzCbLNLftDIM",
+            "model": "big-pickle"
         },
         "anthropic": {
             "name": "Anthropic Claude",
